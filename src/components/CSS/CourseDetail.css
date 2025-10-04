@@ -1,0 +1,274 @@
+/* frontend/src/components/CourseDetail.css */
+.course-detail {
+  min-height: 100vh;
+  background: #f8f9fa;
+  padding: 2rem 0;
+}
+
+.back-nav {
+  margin-top: 5rem;
+  margin-bottom: 1rem;
+}
+
+/* Course Hero Section */
+.course-hero {
+  background: white;
+  padding: 3rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.course-badge {
+  background: #667eea;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+.course-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+  line-height: 1.2;
+}
+
+.course-instructor {
+  font-size: 1.2rem;
+  color: #667eea;
+  margin-bottom: 2rem;
+  font-weight: 500;
+}
+
+.course-meta {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.meta-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #6c757d;
+  font-weight: 500;
+}
+
+.meta-icon {
+  font-size: 1.1rem;
+}
+
+/* Course Content Layout */
+.course-content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+.content-main {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Description Section */
+.description-section {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.description-section h2 {
+  color: #2c3e50;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.description-section p {
+  color: #6c757d;
+  line-height: 1.7;
+  font-size: 1.1rem;
+}
+
+/* Learning Section */
+.learning-section {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.learning-section h2 {
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.learning-points {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.learning-point {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.point-icon {
+  font-size: 1.2rem;
+  margin-top: 0.1rem;
+}
+
+/* Sidebar */
+.content-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  position: sticky;
+  top: 2rem;
+}
+
+.completion-card,
+.course-info-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.completion-badge {
+  text-align: center;
+}
+
+.completion-badge h3 {
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+}
+
+.completion-badge p {
+  color: #6c757d;
+  margin-bottom: 1.5rem;
+}
+
+.completion-badge.completed {
+  background: linear-gradient(135deg, #d4edda, #c3e6cb);
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 2px solid #c3e6cb;
+}
+
+.badge-icon {
+  font-size: 2rem;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+/* Course Info Card */
+.course-info-card h3 {
+  color: #2c3e50;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.info-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.info-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #f1f3f4;
+}
+
+.info-label {
+  font-weight: 600;
+  color: #495057;
+}
+
+.info-value {
+  color: #6c757d;
+}
+
+/* Error State */
+.error-state {
+  text-align: center;
+  padding: 3rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.error-state h2 {
+  color: #dc3545;
+  margin-bottom: 1rem;
+}
+
+.error-state p {
+  color: #6c757d;
+  margin-bottom: 2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 968px) {
+  .course-content {
+    grid-template-columns: 1fr;
+  }
+  
+  .content-sidebar {
+    position: static;
+  }
+}
+
+@media (max-width: 768px) {
+  .course-hero {
+    padding: 2rem 1.5rem;
+  }
+  
+  .course-title {
+    font-size: 2rem;
+  }
+  
+  .course-meta {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .description-section,
+  .learning-section {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .course-hero {
+    padding: 1.5rem 1rem;
+  }
+  
+  .course-title {
+    font-size: 1.75rem;
+  }
+  
+  .description-section,
+  .learning-section,
+  .completion-card,
+  .course-info-card {
+    padding: 1rem;
+  }
+}
