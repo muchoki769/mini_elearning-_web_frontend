@@ -24,7 +24,7 @@ const Dashboard = ({ user }) => {
       setLoading(true);
       
       // Fetch user progress
-      const progressResponse = await axios.get(`${API_URL}/progress/user-progress`);
+      const progressResponse = await axios.get('/progress/user-progress');
       setProgress(progressResponse.data);
       
       // Fetch all courses to get total count

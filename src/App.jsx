@@ -11,6 +11,7 @@ import Navbar from './components/Navbar';
 import './App.css';
 
 axios.defaults.baseURL = 'https://mini-elearning-web-backend.onrender.com/api';
+axios.defaults.withCredentials = true;
 
 function App() {
   const [user, setUser] = useState(null);

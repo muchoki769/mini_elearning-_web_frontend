@@ -306,7 +306,7 @@ const CourseList = ({ user }) => {
       setError('');
       setLoading(true);
       
-      const response = await axios.get(`${API_URL}/courses`);
+      const response = await axios.get('/courses');
       console.log('✅ API Response received:', response);
       console.log('📊 Response data:', response.data);
       console.log('🔢 Number of courses:', response.data.length);

@@ -201,7 +201,7 @@ body {
   align-items: center;
   min-height: 80vh;
   padding: 2rem 0;
-  /* margin: 100px; */
+  margin: 0 auto;
 }
 
 .auth-form {
