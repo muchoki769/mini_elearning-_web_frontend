@@ -10,7 +10,7 @@ import Dashboard from './components/Dashboard';
 import Navbar from './components/Navbar';
 import './App.css';
 
-axios.defaults.baseURL = 'http://localhost:5000/api';
+axios.defaults.baseURL = 'https://mini-elearning-web-backend.onrender.com/api';
 
 function App() {
   const [user, setUser] = useState(null);

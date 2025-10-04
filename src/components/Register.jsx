@@ -45,7 +45,7 @@ const Register = ({ onLogin }) => {
     }
 
     try {
-      const response = await axios.post('/auth/register', {
+      const response = await axios.post(`${API_URL}/auth/register`, {
         username: formData.username,
         email: formData.email,
         password: formData.password

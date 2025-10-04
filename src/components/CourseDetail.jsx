@@ -371,7 +371,7 @@ const CourseDetail = ({ user }) => {
 
   const checkCompletion = async () => {
     try {
-      const response = await axios.get('/progress/user-progress');
+      const response = await axios.get(`${API_URL}/progress/user-progress`);
       const userProgress = response.data.find(progress => 
         progress.course_id === parseInt(id)
       );
